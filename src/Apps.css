@@ -1,0 +1,24 @@
+.App {
+  text-align: center;
+}
+
+.quotation-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.quotation-table th,
+.quotation-table td {
+  border: 1px solid #ddd;      
+  padding: 0.75rem;
+  text-align: left;
+  vertical-align: middle;
+  background: #fff;
+}
+
+.quotation-table th {
+  background-color: #f7f7f7;
+  font-weight: bold;
+}
+
