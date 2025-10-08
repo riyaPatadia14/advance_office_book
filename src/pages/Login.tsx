@@ -44,7 +44,7 @@ const Login = () => {
                 value={field.state.value}
                 onChange={(e) => field.handleChange(e.target.value)}
                 onBlur={field.handleBlur}
-                placeholder="Enter your username or email"
+                placeholder="Username"
               />
               {field.state.meta.errors.length > 0 && (
                 <span className="error-text">{field.state.meta.errors[0]}</span>
@@ -69,7 +69,7 @@ const Login = () => {
                 value={field.state.value}
                 onChange={(e) => field.handleChange(e.target.value)}
                 onBlur={field.handleBlur}
-                placeholder="Enter your password"
+                placeholder="Password"
               />
               {field.state.meta.errors.length > 0 && (
                 <span className="error-text">{field.state.meta.errors[0]}</span>
@@ -90,9 +90,6 @@ const Login = () => {
           )}
         </form.Subscribe>
 
-        <p className="register-link">
-          Don’t have an account? <a href="#">Sign up</a>
-        </p>
       </form>
     </div>
   )

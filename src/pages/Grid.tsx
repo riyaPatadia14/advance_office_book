@@ -42,11 +42,11 @@ export default function Grid() {
                 <div className="header-content">
                     <div className="left-section">
                         <div className="line"></div>
-                        <h1>List</h1>
+                        <h1>User</h1>
                     </div>
-                    <button type="button" className="btn-add">Add</button>
                 </div>
             </header>
+            <button type="button" className="btn-add">Add</button>
             <div className="list-container">
                 <table>
                     <thead>
