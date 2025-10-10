@@ -6,8 +6,10 @@ import {
     flexRender,
 } from "@tanstack/react-table";
 import '../styles/Grid.css';
+import { useNavigate } from "react-router";
 
-export default function Grid() {
+const Grid = ()  => {
+     let navigate = useNavigate();
     const data = React.useMemo(
         () => [
             { number: 1, creationDate: '2025-12-14', customer: 'Michael Admin', activities: 'Pership follow up', salesPerson: 'Sunden Gosh', company: 'Decora', totalStatus: 'Complete' },
@@ -20,12 +22,12 @@ export default function Grid() {
     const columns = React.useMemo(
         () => [
             { header: "Number", accessorKey: "number", kind: 'label' },
-            { header: "Creation Date", accessorKey: "creationDate", kind: 'label' },
-            { header: "Customer", accessorKey: "customer", kind: 'label' },
-            { header: "Sales Person", accessorKey: "salesPerson", kind: 'label' },
-            { header: "Activities", accessorKey: "activities", kind: 'label' },
-            { header: "Company", accessorKey: "company", kind: 'label' },
-            { header: "Total Status", accessorKey: "totalStatus", kind: 'label' },
+            { header: "Name", accessorKey: "creationDate", kind: 'label' },
+            { header: "City", accessorKey: "customer", kind: 'label' },
+            { header: "Plane Start Date", accessorKey: "salesPerson", kind: 'label' },
+            { header: "Plane Expiry Date", accessorKey: "activities", kind: 'label' },
+            { header: "Created By", accessorKey: "company", kind: 'label' },
+            { header: "", accessorKey: "totalStatus", kind: 'button' },
         ],
         []
     );
@@ -46,9 +48,9 @@ export default function Grid() {
                     </div>
                 </div>
             </header>
-            <button type="button" className="btn-add">Add</button>
-            <div className="list-container">
-                <table>
+            <div className="list-container ">
+            <button type="button" className="btn-add btn text-white rounded-0 shadow-none" onClick={() => navigate('/Form')}>Add</button>
+                <table className="mt-3">
                     <thead>
                         {table.getHeaderGroups().map((headerGroup) => (
                             <tr key={headerGroup.id}>
@@ -76,3 +78,6 @@ export default function Grid() {
         </>
     );
 }
+
+
+export default Grid;

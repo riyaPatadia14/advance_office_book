@@ -3,6 +3,9 @@ html, body, #root {
   width: 100%;
   margin: 0;
   padding: 0;
+  background-color: #faf8f8;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
 }
 /* Full-screen centered container */
 .login-container {

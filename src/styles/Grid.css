@@ -80,31 +80,7 @@ h1 {
 }
 
 .btn-add {
-  background-color: #2ecc71; /* Green background */
-  color: #ffffff; /* White text */
-  border: none;
-  width: 5rem;
-  padding: 8px 16px; /* Vertical and horizontal padding */
-  border-radius: 4px; /* Rounded corners */
-  cursor: pointer; /* Pointer cursor on hover */
-  margin: 1.5rem 4rem 0 2rem; /* Top: 1.5rem, Right: 2rem, Bottom: 0, Left: 0 */
+background: rgb(22, 124, 183);
+font-size: 12px;
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
-@media (max-width: 768px) {
-  .btn-add {
-    margin: 1rem 1.5rem 0 0; /* Reduced margin for smaller screens */
-    padding: 6px 12px; /* Slightly reduced padding for smaller screens */
-  }
-}
-
-@media (max-width: 480px) {
-  .btn-add {
-    margin: 0.5rem 1rem 0 0; /* Further reduced margin for very small screens */
-    padding: 4px 10px; /* Adjusted padding for very small screens */
-  }
-}
-
-.btn-add:hover {
-  background-color: #27ae60; /* Darker green on hover */
-}
-
